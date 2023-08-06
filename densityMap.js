@@ -31,6 +31,7 @@ let densityMap = function (p) {
     });
     userInput.input(() => {
       if (radio.value() === "2" && userInput.value() != "") {
+        density = userInput.value();
         if (direction.value() === "darkest -> brightest") {
           startDir = 0;
           endDir = density.length;
@@ -38,7 +39,6 @@ let densityMap = function (p) {
           startDir = density.length;
           endDir = 0;
         }
-        density = userInput.value();
       }
     });
   };

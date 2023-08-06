@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <div id="content">
+      <div id="wrapper">
+      <div id="title">
+      <h3>ascii/unicode square art generator</h3>
+    </div>
+    <main>
+      <div id="menu">
+        <p><b>options</b></p>
+        <div id="uploadImg" class="menuItem">
+          <label id="customUpload">upload image</label></div>
+
+        <div id="densityMap" class="menuItem">choose density mapping:</div>
+
+        <div id="densityDir" class="menuItem">
+          set density map direction:<br />
+      </div>
+
+        <div id="selectRes" class="menuItem">
+          select resolution:<br />
+        </div>
+
+        <div id="copyText" class="menuItem">
+          copy art text:
+          <div id="textOut"></div>
+        </div>
+      </div>
+      <div id="genImg">
+        <p><b>the rendered image</b></p>
+      </div>
+    </main>
+    </div>
+    </div>
+    <script src="uploadImg.js"></script>
+    <script src="selectMode.js"></script>
+    <script src="densityMap.js"></script>
+    <script src="densityDir.js"></script>
+    <script src="selectRes.js"></script>
+    <script src="genImg.js"></script>
+  </body>
+</html>
